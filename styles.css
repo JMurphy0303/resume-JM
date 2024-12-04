@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oxanium:wght@200..800;276&family=Parkinsans:wght@300..800&display=swap');
+
+
+
+
+.g-base {
+    background-color: rgb(24, 36, 58);
+    color: rgb(146, 150, 155);
+}
+
+
+#p-home {
+    color: rgb(143, 155, 156);
+    padding: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        "header links links"
+        "welcome welcome welcome"
+        "info info info";
+}
+
+#p-home #s-header {
+    grid-area: header;
+    font-size: 4rem; 
+    color: rgb(82, 75, 75);
+    margin: 5%;
+    font-family: 'Kanit', 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: rgb(24, 36, 58);
+    text-align: center;
+}
+
+#p-home #s-links {
+    font-size: 1.6rem;
+    grid-area: links;
+    display: flex;
+    margin: 8%;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Parkinsana', Verdana, Tahoma, sans-serif;
+}
+
+#p-home #s-links a {
+    text-decoration: none; 
+    padding-left: 30px;  
+    padding-right: 30px;    
+    border-right: 2px dotted rgb(255, 254, 254);
+}
+
+#p-home #s-links a:hover {
+    color: rgb(0, 185, 241);
+}
+
+#p-home #s-welcome {
+    font-size: 1.7rem;
+    grid-area: welcome;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border-top: 3px solid white;
+    padding-top: 40px;
+}
+
+#p-home #s-info {
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    grid-area: info;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: rgb(54, 55, 70);
+    font-family: 'Karla';
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------Resume Page */
+#p-resume {
+    display: grid;
+    padding: 30px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "header links"
+    "contact profile"
+    "education skills"
+    "experience availability";
+    padding: 40px;
+}
+
+#p-resume #s-header {
+    grid-area: header;
+    font-size: 4rem; 
+    color: rgb(82, 75, 75);
+    margin: 5%;
+    font-family: 'Kanit', 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: rgb(24, 36, 58);
+    text-align: center;
+}
+
+#p-resume #s-links {
+    font-size: 1.6rem;
+    grid-area: links;
+    display: flex;
+    gap: 15px;
+    margin: 8%;
+    justify-content: right;
+    font-family: 'Parkinsana', Verdana, Tahoma, sans-serif;
+}
+
+#p-resume #s-links a {
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 2px dotted rgb(255, 254, 254);
+}
+
+#p-resume a {
+    text-decoration: none;
+    color: rgb(199, 177, 177);
+}
+
+#p-resume a:hover {
+    color: rgb(0, 185, 241);
+}
+
+#p-resume #s-contact {
+    grid-area: contact;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-resume #s-profile {
+    grid-area: profile;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px; 
+    color: rgb(199, 177, 177);
+}
+
+#p-resume #s-education {
+    grid-area: education;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-resume #s-skills {
+    grid-area: skills;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-resume #s-experience {
+    grid-area: experience;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px; 
+    color: rgb(199, 177, 177);
+}
+
+#p-resume #s-availability {
+    grid-area: availability;font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px; 
+    color: rgb(199, 177, 177);
+
+}
+
+
+
+
+
+
+
+/* ---------------------------------WebApp Page */
+#p-webApp {
+    color: rgb(146, 150, 155);
+    display: grid;
+    padding: 30px;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header links"
+        "webapp1 webapp2"
+        "webapp3 webapp4"
+        "webapp5 webapp6";
+}
+
+#p-webApp #s-header {
+    grid-area: header;
+    font-size: 4rem;
+    color: rgb(82, 75, 75);
+    margin: 5%;
+    font-family: 'Kanit', 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: rgb(24, 36, 58);
+    text-align: center;
+}
+
+#p-webApp #s-links {
+    font-size: 1.6rem;
+    grid-area: links;
+    display: flex;
+    gap: 15px;
+    margin: 8%;
+    justify-content: flex-end;
+    font-family: 'Parkinsana', Verdana, Tahoma, sans-serif;
+}
+
+#p-webApp #s-links a {
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 2px dotted rgb(255, 254, 254);
+    color: rgb(199, 177, 177);
+}
+
+#p-webApp #s-links a:hover {
+    color: rgb(0, 185, 241);
+}
+
+#p-webApp #s-webapp1 {
+    grid-area: webapp1;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-webApp #s-webapp2 {
+    grid-area: webapp2;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-webApp #s-webapp3 {
+    grid-area: webapp3;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-webApp #s-webapp4 {
+    grid-area: webapp4;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-webApp #s-webapp5 {
+    grid-area: webapp5;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-webApp #s-webapp6 {
+    grid-area: webapp6;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+
+
+
+/* -----------------------------------Other Samples */
+#p-otherSamples {
+    color: rgb(146, 150, 155);
+    display: grid;
+    padding: 40px;
+    gap: 30px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header links"
+        "samp1 samp2"
+        "samp3 samp3"; 
+}
+
+
+#p-otherSamples #s-header {
+    color: rgb(82, 75, 75);
+    grid-area: header;
+    font-size: 4rem; 
+    margin: 5%;
+    font-family: 'Kanit', 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(24, 36, 58);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+#p-otherSamples #s-links {
+    font-size: 1.6rem;
+    grid-area: links;
+    display: flex;
+    gap: 15px;
+    margin: 8%;
+    justify-content: flex-end;
+    font-family: 'Parkinsana', Verdana, Tahoma, sans-serif;
+}
+
+
+#p-otherSamples #s-links a {
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 2px dotted rgb(255, 254, 254);
+    color: rgb(199, 177, 177);
+}
+
+#p-otherSamples #s-links a:hover {
+    color: rgb(0, 185, 241);
+}
+
+#p-otherSamples #s-samp1 {
+    grid-area: samp1;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-otherSamples #s-samp2 {
+    grid-area: samp2;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+#p-otherSamples #s-samp3 {
+    grid-area: samp3;
+    font-family: 'Oxanium', Tahoma, Verdana, sans-serif;
+    border: 2px solid white;
+    background-color: rgb(54, 55, 70);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(199, 177, 177);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    #p-resume {
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "links"
+            "contact"
+            "profile"
+            "education"
+            "skills"
+            "experience"
+            "availability";
+    }
+
+    #p-resume #s-header {
+        font-size: 3.5rem;
+        margin: 10px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #p-resume #s-links {
+        font-size: 1.6rem;
+        justify-content: flex-end;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #p-resume #s-links a {
+        padding-right: 20px;
+        border-right: none;
+    }
+
+    #p-resume #s-contact,
+    #p-resume #s-profile,
+    #p-resume #s-education,
+    #p-resume #s-skills,
+    #p-resume #s-experience,
+    #p-resume #s-availability {
+        padding: 20px;
+        font-size: 1.7rem;
+    }
+
+
+
+
+    #p-home {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header links"
+            "welcome welcome"
+            "info info";
+    }
+
+    #p-home #s-header {
+        font-size: 3.5rem;
+        margin: 10px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #p-home #s-links {
+        font-size: 1.6rem;
+        justify-content: center;
+        margin: 8%;
+        display: flex;
+    }
+
+    #p-home #s-links a {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: 2px dotted rgb(255, 254, 254);
+    }
+
+    #p-home #s-welcome {
+        font-size: 1.6rem;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    #p-home #s-info {
+        font-size: 1.8rem;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 10px;
+    }
+
+
+
+
+    #p-webApp {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "links links"
+            "webapp1 webapp2"
+            "webapp3 webapp4"
+            "webapp5 webapp6";
+    }
+
+    #p-webApp #s-header {
+        font-size: 3.5rem;
+        margin: 3%;
+    }
+
+    #p-webApp #s-links {
+        font-size: 1.5rem;
+        margin: 5%;
+        justify-content: center;
+    }
+
+    #p-webApp #s-links a {
+        padding-right: 8px;
+    }
+
+    #p-webApp #s-webapp1,
+    #p-webApp #s-webapp2,
+    #p-webApp #s-webapp3,
+    #p-webApp #s-webapp4,
+    #p-webApp #s-webapp5,
+    #p-webApp #s-webapp6 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #p-webApp #s-webapp1 img,
+    #p-webApp #s-webapp2 img,
+    #p-webApp #s-webapp3 img,
+    #p-webApp #s-webapp4 img,
+    #p-webApp #s-webapp5 img,
+    #p-webApp #s-webapp6 img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+
+    #p-otherSamples {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header links"
+            "samp1 samp2"
+            "samp3 samp3";
+    }
+
+    #p-otherSamples #s-header {
+        font-size: 3.5rem;
+        margin: 3%;
+    }
+
+    #p-otherSamples #s-links {
+        font-size: 1.5rem;
+        margin: 5%;
+        justify-content: flex-start;
+    }
+
+    #p-otherSamples #s-links a {
+        text-decoration: none;
+        padding-right: 10px;
+        border-right: 2px dotted rgb(255, 254, 254);
+        color: rgb(199, 177, 177);
+        width: 150px;
+        max-width: 100%;
+    }
+
+    #p-otherSamples #s-samp1,
+    #p-otherSamples #s-samp2,
+    #p-otherSamples #s-samp3 {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #p-otherSamples #s-samp1 img,
+    #p-otherSamples #s-samp2 img,
+    #p-otherSamples #s-samp3 img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #p-home {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "header"
+            "links"
+            "welcome"
+            "info";
+    }
+
+   
+    #p-home #s-header {
+        font-size: 3rem; 
+        margin: 20px; 
+        padding: 8px; 
+    }
+
+    
+    #p-home #s-links {
+        font-size: 1.4rem; 
+        justify-content: center;
+        margin: 10px 0; 
+    }
+
+    #p-home #s-links a {
+        padding: 10px 20px; 
+        border-right: none;
+    }
+
+    #p-home #s-links a:hover {
+        color: rgb(0, 185, 241); 
+    }
+
+    
+    #p-home #s-welcome {
+        font-size: 1.5rem; 
+        padding-top: 20px; 
+    }
+
+    
+    #p-home #s-info {
+        font-size: 1.6rem; 
+        margin-top: 10px; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        padding: 15px; 
+    }
+
+    #p-resume {
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "links"
+            "contact"
+            "profile"
+            "education"
+            "skills"
+            "experience"
+            "availability";
+    }
+
+    #p-resume #s-header {
+        font-size: 3rem;
+        margin: 10px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #p-resume #s-links {
+        font-size: 1.4rem;
+        justify-content: flex-end;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #p-resume #s-links a {
+        padding-right: 20px;
+        border-right: none;
+    }
+
+    #p-webApp {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "links"
+            "webapp1"
+            "webapp2"
+            "webapp3"
+            "webapp4"
+            "webapp5"
+            "webapp6";
+    }
+
+    #p-webApp #s-header {
+        font-size: 2.5rem;
+        margin: 2%;
+    }
+
+    #p-webApp #s-links {
+        font-size: 1.4rem;
+        margin: 5%;
+        justify-content: center;
+    }
+
+    #p-webApp #s-links a {
+        padding-right: 8px;
+    }
+
+    #p-webApp #s-webapp1,
+    #p-webApp #s-webapp2,
+    #p-webApp #s-webapp3,
+    #p-webApp #s-webapp4,
+    #p-webApp #s-webapp5,
+    #p-webApp #s-webapp6 {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #p-webApp #s-webapp1 img,
+    #p-webApp #s-webapp2 img,
+    #p-webApp #s-webapp3 img,
+    #p-webApp #s-webapp4 img,
+    #p-webApp #s-webapp5 img,
+    #p-webApp #s-webapp6 img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+
+    #p-otherSamples {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "links"
+            "samp1"
+            "samp2"
+            "samp3";
+    }
+
+    #p-otherSamples #s-header {
+        font-size: 2.5rem;
+        margin: 2%;
+    }
+
+    #p-otherSamples #s-links {
+        font-size: 1.4rem;
+        margin: 5%;
+        justify-content: center;
+    }
+
+    #p-otherSamples #s-links a {
+        padding-right: 8px;
+    }
+
+    #p-otherSamples #s-samp1,
+    #p-otherSamples #s-samp2,
+    #p-otherSamples #s-samp3 {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #p-otherSamples #s-samp1 img,
+    #p-otherSamples #s-samp2 img,
+    #p-otherSamples #s-samp3 img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
